@@ -1,0 +1,26 @@
+/* RESET  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.scatola {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(8, 237, 8);
+}
+
+.box {
+    width: 271px;
+    padding: 10px;
+    font-size: 21px;
+    text-align: center;
+}
