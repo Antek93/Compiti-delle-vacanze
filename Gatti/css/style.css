@@ -1,0 +1,40 @@
+/* RESET  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://tenlives.com.au/wp-content/uploads/2020/09/Problem-Too-Many-Cats-scaled.jpg');
+    background-size: cover;
+}
+
+
+.box {
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    width: 289px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.input {
+    background-color: #8e9b91;
+    border-radius: 20px;
+    margin: 9px 0px;
+    padding: 4px 0px;
+}
+
+.output {
+    background-color: #d9b379;
+    border-radius: 20px;
+    padding: 4px 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
