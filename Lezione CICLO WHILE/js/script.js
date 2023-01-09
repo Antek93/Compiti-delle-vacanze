@@ -24,7 +24,7 @@ console.log('HI, I am java and I am working fine')
 
 //   contatore;    cond. permanenza,  mod di avanzamento
 for (let i = 1;        i <= 10;               i++) {
-    console.log(i); //stampo in console tutti i numeri da 1 a 10
+    console.log('ciclo for:', i); //stampo in console tutti i numeri da 1 a 10
 }
 
 // ciclo while
@@ -33,7 +33,7 @@ let j = 1; // 1 è il contatore
 
 while (j <=10) { //Finché il valore di J è minore o = a 10:
 
-    console.log('ciclo while', j); // stampa il valore di J in console
+    console.log('ciclo while:', j); // stampa il valore di J in console
 
     j++ // modalità di avanzamento // poi incrementa di 1
 }
@@ -41,3 +41,26 @@ while (j <=10) { //Finché il valore di J è minore o = a 10:
 // Il ciclo while continuerà a stampare fino a quando incrementando di 1 in 1 la variabile j non arriva a 10
 // Una volta a 10 la condizione tra parentesi viene invalidata
 // il ciclo quindi si interrompe
+
+// Il ciclo for e while sono equivalenti, va scelto il piu comodo in base al caso
+// Generalmente for ha un numero definito di esecuzioni e while un ciclo non definito
+
+const students = [
+    'Alice',
+    'Bartolo',
+    'Claudia',
+    'Damiano'
+];
+
+for (let i = 0; i < students.length; i++) {
+    console.log('ciclo for:', i, students[i]);
+
+}
+
+let h = 0;
+while (h < students.lenght) {
+    console.log('ciclo while', h, students[h]);
+
+    h++;
+}
+
