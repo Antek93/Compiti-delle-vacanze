@@ -42,7 +42,12 @@ function sommaNumeri (num1, num2) {
 const somma = sommaNumeri (49, 2); //Definiti num1 e num2 e richiamata la funzione sommaNumeri, viene eseguita l'operazione della funzione
 
 console.log (somma); // darà il risultato corretto della funzione sommaNumeri, poichè è stata richiamata; (51)
-// console.log (risultato); Darebbe errore se lavorasse, perché risultato esiste solo nello scope della funzione;
+// console.log (risultato);
+
+     //↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑//
+// Darebbe errore se lavorasse, perché risultato esiste solo nello scope della funzione;
 
 //_________________________________________________________________________________________________________________
+
+
 
