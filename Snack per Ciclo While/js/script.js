@@ -19,9 +19,10 @@ while ((flag == false) && (i < invitati.length))  {
 }
 
 if (flag == true) {
-    console.log('Benvenuto alla festa');
+    alert('Benvenuto alla festa');
 
 } else {
-    console.log('Non sei ammesso alla festa');
+    alert('Non sei ammesso alla festa');
+    prompt('Inserisci il tuo nome');
 
 }
