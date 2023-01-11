@@ -19,15 +19,30 @@ for (let i = 0; i < 64; i++) {
 
     const newCell = document.createElement('div');
     newCell.classList.add('cell');
-    gridContainer.append(newCell);
+
     //aggiungere un evento per il click
 
-    newCell.addEventListener('click,', //quando clicco su newCell
-    
-    function() {
-        console.log('Clicked:')
-    }
-    
-    )
+    newCell.addEventListener('click',
+            
+            function() {
+
+                console.log(this) // 
+                console.log('Clicked') //in console compare la voce clicked come verifica
+
+                if(this.classList.contains('clicked')) {
+                    this.classList.remove('clicked')
+
+                } else {
+
+                    this.classList.add('clicked')
+                    
+                }
+
+        }
+        
+    );
+
+    gridContainer.append(newCell);
+
 }
 
