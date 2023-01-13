@@ -25,7 +25,7 @@ const         funzione   =        () =>             1 + 1;
 
 // const + nome funzione = sintassi funzione     //esempio
 
-/* 3.) Se abbiamo bisogno del this conviene utilizzare una funzione ANOMINA*/ !important;
+/* 3.) Se abbiamo bisogno del this conviene utilizzare una funzione ANONIMA*/ !important;
 
 // Utilizzando una function anonima, possiamo intercettare l'elemento del DOM che ha scatenato l'EventCounts, utilizzando il this 
 
