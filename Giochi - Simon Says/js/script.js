@@ -95,14 +95,14 @@ setTimeout(function () {
     }
 
 
-    while (isNaN(colorBox)) {
+    while (isNaN(parseInt(userNumber))) {
 
             alert('Puoi inserire solo numeri');
-            colorBox = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox + ':'));
+            number = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox[i] + ':'));
 
         }
 
-}, 33000);
+}, 34000);
 
 
 
@@ -112,25 +112,18 @@ setTimeout(function () {
 setTimeout(function () {
 
     for(let i = 0; i <= 4; i++) {
-
-     myFunction();
-     console.log()
-     
-    }
-
-    for(let i = 0; i <= 4; i++) {
     
     verifica(userNumber[i], boxNumbers[i], megaBox[i]) //verifica box
     }
     setTimeout(function () {
 
-        alert("Il tuo punteggio è: " + '' + score + '')
+        alert("Hai indovinato:" + ' ' + score + 'Il tuo punteggio è:' + ' ' + score);
     
-    }, 3000);
+    }, 6000);
 
 
 
-}, 35000);
+}, 36000);
 
 /*----------------------------Creata funzione per verifica punteggio----------------------------*/
 
