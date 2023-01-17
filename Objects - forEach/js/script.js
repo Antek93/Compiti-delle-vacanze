@@ -32,12 +32,8 @@ people.forEach(person => {
 
     if(person.age >= 18) maggiorenne = 'non è abilitato';
 
-    drivers.push(`
-    ${person.name}
-    ${person.surname}
-    ${maggiorenne}
-    
-    a guidare`
+    drivers.push(
+    `${person.firstName} ${person.surname} ${maggiorenne} a guidare`
     );
 });
 
