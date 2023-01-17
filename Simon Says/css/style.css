@@ -1,0 +1,77 @@
+/* RESET  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Attributi basic per contenitore numeri*/
+
+.basic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    transform: translate(-50%,-50%);
+
+}
+
+/*Attributi box*/
+
+#First-box {
+    background-color: rgb(207, 254, 0);
+    top: 85%;
+    left: 50%;
+    color: black;
+}
+
+#Second-box {
+    background-color: rgb(241, 120, 221);
+    top: 50%;
+    left: 25%;
+    color: black;
+    
+}
+
+#Third-box {
+    background-color: orange;
+    top: 50%;
+    left: 75%;
+    color: black;
+}
+
+#Fourth-box {
+    background-color: blue;
+    top: 15%;
+    left: 50%;
+}
+
+#Fifth-box {
+    background-color: blueviolet;
+    top: 50%;
+    left: 50%;
+    color: black;
+}
+
+/*Attributo hidden per i menu a scomparsa*/
+
+.hidden {
+    display: none;
+}
+
+/*Dettagli per num. corretto*/
+
+.corretto {
+    border: 5px solid rgb(0, 255, 0);
+}
+
+.scorretto {
+    border: 5px solid rgb(255, 0, 0);
+}
+

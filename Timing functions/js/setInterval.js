@@ -14,3 +14,5 @@ function myFunction () {
 clearInterval(clock);
 // ↑ voce fissa (nome della variabile)
 
+
+
