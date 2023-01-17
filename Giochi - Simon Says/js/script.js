@@ -72,39 +72,25 @@ setTimeout(function () {
 
 /*---------------------------------Creazione box colori-----------------------------------------*/
 
-let orange = 'arancione';
-let blue = 'blu';
-let pink = 'rosa';
-let purple = 'viola';
-let yellow = 'giallo';
-let colorBox = ['arancione', 'blu', 'rosa', 'viola', 'giallo'];
+
+let colorBox = ['giallo', 'rosa', 'arancione', 'blu', 'viola'];
 let userNumber = [];
 
 
 /*-----------------------------Creazione ciclo per ricevere num da utenti------------------------*/
+
 setTimeout(function () {
-
     for (let i = 0; i <= 4; i++) {
-
-        let number = 0;
-        number = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox[i] + ':'));
-        userNumber.push(number);
-        console.log('userNumber:', userNumber)
-        console.log('ordien colori:', colorBox[i])
-
-    }
-
-
-    while (isNaN(parseInt(userNumber))) {
-
+        let number = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox[i] + ':'));
+        while (isNaN(number)) {
             alert('Puoi inserire solo numeri');
             number = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox[i] + ':'));
-
         }
-
+        userNumber.push(number);
+        console.log('userNumber:', userNumber);
+        console.log('ordine colori:', colorBox[i]);
+    }
 }, 34000);
-
-
 
 /*--------------------------Applicata funzione 5 volte tramite ciclo for-------------------------*/
 
@@ -112,12 +98,14 @@ setTimeout(function () {
 setTimeout(function () {
 
     for(let i = 0; i <= 4; i++) {
-    
+
     verifica(userNumber[i], boxNumbers[i], megaBox[i]) //verifica box
+ 
     }
+
     setTimeout(function () {
 
-        alert("Hai indovinato:" + ' ' + score + 'Il tuo punteggio è:' + ' ' + score);
+        alert("Hai indovinato:" + '' + score + ' numeri' + ' ' + 'Il tuo punteggio è:' + ' ' + score);
     
     }, 6000);
 
@@ -144,3 +132,6 @@ function verifica(numUtente, arraycasuale, box) {
 
 
 }
+
+console.log('userNumber:', userNumber)
+console.log('boxNumber:', boxNumbers)
