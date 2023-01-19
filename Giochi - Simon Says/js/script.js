@@ -19,7 +19,7 @@ let boxNumbers = [];
 
 /*-------Ciclo for per generare 5 volte dei numeri randomici e inserirli nell'array--------------*/
 
-for (let i = 0; i <= 4; i++) {
+for (let i = 0; i <= 5; i++) {
 
     let randomNums = randomNumbers();
     boxNumbers.push(randomNums);
@@ -39,23 +39,26 @@ let boxCinque = document.getElementById('Fifth-box');
 
 let megaBox = [boxUno, boxDue, boxTre, boxQuattro, boxCinque];
 
-
 /*----------------------Funzione per assegnare elementi al dom ----------------------------------*/
 
 
 for (let i = 0; i <= 4; i++) {
+
     megaBox[i].innerHTML = boxNumbers[i];
+
+    
 }
 
 /*-------------------------Dopo 30 secondo i numeri scompaiono-----------------------------------*/
 
 
 setTimeout(function () {
-
+    
 
     for (let i = 0; i <= 4; i++) {
 
         megaBox[i].innerHTML = '?';
+    
         
     }
 
@@ -65,53 +68,64 @@ setTimeout(function () {
 
         alert('TIME OUT');
     
-    }, 3000);
+    }, 32000);
 
 }, 30000);
 
 
 /*---------------------------------Creazione box colori-----------------------------------------*/
 
+let orange = 'arancione';
+let blue = 'blu';
+let pink = 'rosa';
+let purple = 'viola';
+let yellow = 'giallo';
 
-let colorBox = ['giallo', 'rosa', 'arancione', 'blu', 'viola'];
-let userNumber = [];
+/*---------------------------------Creazione array colori-----------------------------------------*/
 
+let color = [orange, blue, pink, purple, yellow]
 
-/*-----------------------------Creazione ciclo per ricevere num da utenti------------------------*/
+/*---------------Creazione funzione per ricevere num da utenti rispetto al colore-----------------*/
 
-setTimeout(function () {
-    for (let i = 0; i <= 4; i++) {
-        let number = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox[i] + ':'));
-        while (isNaN(number)) {
-            alert('Puoi inserire solo numeri');
-            number = parseInt(prompt('Inserisci il numero del box' + ' ' + colorBox[i] + ':'));
-        }
-        userNumber.push(number);
-        console.log('userNumber:', userNumber);
-        console.log('ordine colori:', colorBox[i]);
+function colorFunction(color, [j]) {
+    
+    console.log(color[j]); //Descrizione in console: colore.
+    color[j] = parseInt(prompt('Inserisci il numero del box' + ' ' + color[j] + ':'));
+    console.log(color[j]); //Descrizione in console: numero che corrisponde al colore.
+
+    if (isNaN(color[j])) {
+        alert('Puoi inserire solo numeri');
+        console.log(color[j]); //Descrizione in console: colore.
+        color[j] = parseInt(prompt('Inserisci il numero del box' + ' ' + color[j] + ':'));
+        console.log(color[j]); //Descrizione in console: numero che corrisponde al colore.
+
     }
-}, 34000);
+
+}
 
 /*--------------------------Applicata funzione 5 volte tramite ciclo for-------------------------*/
 
 
 setTimeout(function () {
-
+    
+    let k = 0;
     for(let i = 0; i <= 4; i++) {
 
-    verifica(userNumber[i], boxNumbers[i], megaBox[i]) //verifica box
- 
+     colorFunction(color, [k]);
+     verifica(color[k], boxNumbers[k], megaBox[k]) //verifica box
+     k++;
+
     }
 
     setTimeout(function () {
 
-        alert("Hai indovinato:" + '' + score + ' numeri' + ' ' + 'Il tuo punteggio è:' + ' ' + score);
+        alert("Il tuo punteggio è: " + '' + score + '')
     
-    }, 6000);
+    }, 2000);
 
 
 
-}, 36000);
+}, 35000);
 
 /*----------------------------Creata funzione per verifica punteggio----------------------------*/
 
@@ -123,6 +137,8 @@ function verifica(numUtente, arraycasuale, box) {
 
         score = score + 1;
         box.classList.add('corretto');
+        console.log('punteggio', score)
+
         
 
     } else {
@@ -133,5 +149,4 @@ function verifica(numUtente, arraycasuale, box) {
 
 }
 
-console.log('userNumber:', userNumber)
-console.log('boxNumber:', boxNumbers)
+
