@@ -75,11 +75,11 @@ setTimeout(function () {
 
 /*---------------------------------Creazione box colori-----------------------------------------*/
 
-let orange = 'arancione';
-let blue = 'blu';
-let pink = 'rosa';
-let purple = 'viola';
-let yellow = 'giallo';
+let orange = 'giallo';
+let blue = 'rosa';
+let pink = 'orange';
+let purple = 'blu';
+let yellow = 'viola';
 
 /*---------------------------------Creazione array colori-----------------------------------------*/
 
@@ -119,7 +119,7 @@ setTimeout(function () {
 
     setTimeout(function () {
 
-        alert("Il tuo punteggio è: " + '' + score + '')
+        alert("Il tuo punteggio è:" + ' ' + '' + score + '')
     
     }, 2000);
 
