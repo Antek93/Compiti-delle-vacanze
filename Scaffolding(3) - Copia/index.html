@@ -19,16 +19,37 @@
 
         <!-- -------------------    DIRETTIVA V-IF e V-ELSE    ------------------------------------ -->
 
-        <div v-if="isLogged">  <!--SE isLogged è uguale true: mostra il contenuto interno al div-->
+
+
+        <div v-if="isLogged">  <!--SE isLogged è uguale true: mostra il contenuto interno a QUESTO div-->
             {{ casoUno }}
         </div>
 
-        <div v-else>            <!--ALTRIMNETI mostra il contenuto interno di questo div-->
+        <div v-else>            <!--ALTRIMNETI mostra il contenuto interno di QUESTO div-->
             {{ casoDue }}
         </div>
 
         <!-- -------------------   In questo caso verrà mostrato solo v-else    ------------------------------------ -->
         <!-- ---------------  perché su js isLogged è stato dichiarato come false    ------------------------------------ -->
+
+        <br>
+
+        <!-- -------------------    DIRETTIVA V-SHOW    ------------------------------------ -->
+
+        <div v-show="isLogged">  <!--SE isLogged è uguale true: mostra il contenuto interno al div-->
+                    {{ greeting }}
+        </div>
+
+        <div v-show="!isLogged">  <!--SE isLogged è diverso true: mostra il contenuto interno al div-->
+                    {{ greeting }}
+        </div>
+    
+
+        <!--La differenza tra v-show e if/else-->
+
+        <!--IF/Else mostra una delle due condizioni, eliminando quella non veritiera-->
+        <!--V-Show mostra la condizione se veritiera, altrimenti, viene nascosta con la proprietà display: none-->
+
 
     </div>
     
