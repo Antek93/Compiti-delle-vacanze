@@ -17,6 +17,7 @@ createApp({  // oggetto esterno
     data() {  // funzione                                       In data inseriamo tutte la variabili che vogliamo utilizzare
         return { // ritorno di funzione                         all'interno del nostro html
             greeting: 'Ciao Antonio',
+            picture: 'img/1p.png',
             oggetto: {
                 esempio1: 'Ciao',
                 esempio2: 'Come va?'
