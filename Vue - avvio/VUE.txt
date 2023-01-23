@@ -1,0 +1,81 @@
+Vue js è un frameworjk per migliorare alcune aree di interazione con il DOM
+
+Un framework = gruppo di strumenti/tools per creare applicazioni web
+
+(è un opensource, leggibile da tutti e modificabile)
+
+crea: interfacce utenti e single app.
+
+Single-Page application: può essere usata su una singola pagina web, cioè il codice è recuperato in un singolo caricamento della pagina
+
+altri framework richiesto dal mondo del lavoro: REACT - ANGULAR
+
+Le API = Application Programming Interface
+
+- Options API
+- Composition API
+
+Sono due modi di utilizzare le librerie di VUE
+
+- options EASY
+- composition ADVANCED
+
+Con Vue: creaiamo strutture dati:
+
+- Array
+- Oggetti
+- Variabili
+- ecc..
+
+1. Creiamo struttura dati
+2. Manipoliamo i dati per riscrivere il DOM 
+
+
+[i framework che vanno importati con codice su html di chiamano CDN]???
+
+Nell'HTML possiasmo usare degli attributi speciali chiamati "direttive",
+tra i più usati abbiamo:
+
+- v-model
+- v-bind
+- v-for
+- v-show
+- v-if / elseif / else
+- v-on
+
+v-model:
+
+serve a monitorare il value di un input
+
+
+v-bind:
+
+serve a fare l'attribute binding
+
+↓ovvero↓
+
+serve a dare un valore dinamico ad un attributo html
+↓ovvero↓
+
+è possibile inserire una variabile all'interno di una classe in QUALSIASI tag html
+
+↓forma estesa↓
+
+v-binding:class=""
+
+↓forma contratta↓
+
+:class=""
+
+v:on = quando si verifica "" 
+
+
+
+
+
+
+
+
+
+
+
