@@ -50,6 +50,62 @@
         <!--IF/Else mostra una delle due condizioni, eliminando quella non veritiera-->
         <!--V-Show mostra la condizione se veritiera, altrimenti, viene nascosta con la proprietà display: none-->
 
+        <br>
+
+        <!-- -------------------    DIRETTIVA V-FOR NEGLI ARRAY    ------------------------------------ -->
+        
+
+        <ol> <!-- IN serve a ciclare negli array-->
+                          <!-- ↓↓ -->
+
+            <li v-for="prodotti in list"> <!--prendi tutti gli element(prodotti) presenti nell'array List -->
+
+                <!--qui verrano riprodotti tanti <li> quanti sono gli elementi nell'array-->
+                <!--in ogni <li> sarà presente un element(prodotti) dell'array-->
+
+                    {{ prodotti }}
+
+            </li>
+        </ol>
+
+        <br>
+
+         <!-- -------------------    DIRETTIVA V-FOR NEGLI OGGETTI    ------------------------------------ -->
+
+
+        <ol> 
+             <!--        ↓↓ prima il valore interno e poi le key dell'oggetto in Data su JS-->
+             <!--        ↓↓                                                                -->
+            <li v-for="(value, key) in listDue"> <!-- definiti gli elementi VALUE E KEY in listDue come oggetto -->
+
+            <!--qui verrano riprodotti tanti <li> quanti sono gli elementi nell'oggetto -->
+            <!--in ogni <li> sarà presente la key dell'oggetto e il valore espresso nella key dell'oggetto listDue -->
+      
+                  {{ key }} {{ value}}
+
+            </li>
+        </ol>
+
+        <br>
+
+         <!-- -------------------    DIRETTIVA V-FOR PER CICLARE N VOLTE   ------------------------------------ -->
+
+        <ol>
+            <li v-for="n in 100"> <!-- ciclare 100 volte l'elemento li -->
+
+                {{ n }} <!-- in ogni <li> sarà presente un n di 100-->
+                    <!--quindi:-->
+                    
+                    <!--<li> 1 </li>-->
+                    <!--<li> 2 </li>-->
+                    <!--<li> 3 </li>-->
+                    <!--<li> 4 </li>-->
+                    <!--<li> 5 </li>-->
+                    <!--<li> 6 </li>-->
+                    <!--<li> ecc.. </li>-->
+         
+            </li>
+        </ol>
 
     </div>
     

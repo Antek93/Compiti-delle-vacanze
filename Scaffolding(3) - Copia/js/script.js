@@ -11,10 +11,20 @@ createApp({
             isLogged: false, //PRIMA CONDIZIONE - parte da falsa
             casoUno: 'Sono IF',
             casoDue: 'Sono ELSE',
-            oggetto: {
-                esempio1: 'Ciao',
-                esempio2: 'Come va?'
-            }
+            //ARRAY di ELEMENTI
+            list: [
+                'Acqua',
+                'Patate',
+                'Aglio',
+                'Pomodoro',
+            ],
+            //OGGETTO di ELEMENTI
+            listDue: {
+                first: 'Acqua',
+                second:'Patate',
+                third: 'Aglio',
+                fourth: 'Pomodoro',
+            },
         }
     },
     methods: {
