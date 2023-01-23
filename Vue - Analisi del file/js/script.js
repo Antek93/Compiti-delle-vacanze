@@ -24,7 +24,7 @@ createApp({  // oggetto esterno
             }
         }
     },
-    methods: { // funzione
+    methods: { // funzione                                      In methods inseriamo funzioni, if, cicli ecc..
         functionExample: function () {
             return  console.log('I am Vue and I am working properly'); //ritorno di funzione
         },
