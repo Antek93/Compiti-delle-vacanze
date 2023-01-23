@@ -12,8 +12,8 @@ const { createApp } = Vue; // E' un deconstructuring della funzione create App
 createApp({  // oggetto esterno
 
     
-    data() {  // funzione                                  In data inseriamo tutte la variabili 
-        return { // ritorno di funzione
+    data() {  // funzione                                       In data inseriamo tutte la variabili che vogliamo utilizzare
+        return { // ritorno di funzione                         all'interno del nostro html
             greeting: 'Ciao Antonio', //
             oggetto: {
                 esempio1: 'Ciao',
